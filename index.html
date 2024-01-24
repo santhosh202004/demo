@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>circle</title>
+	<link rel="stylesheet" type="text/css" href="cyclestyle.css">
+	<script type="text/javascript">
+
+
+function myFunctuon(){
+
+	var dot =document.getElementById("dot");
+	var readmore=document.getElementById("readmore");
+	var btn=document.getElementById("btn");
+
+	if (dot.style.display === "none") {
+    dot.style.display = "inline";
+    btn.innerHTML = "Read more"; 
+    readmore.style.display = "none";
+  	} 
+  else {
+    dot.style.display = "none";
+    btn.innerHTML = "Read less"; 
+    readmore.style.display = "inline";
+  }
+
+}
+
+		
+function create() {
+document.getElementById("Create").style = "display:block;";
+document.getElementById("Distribute").style = "display:none";
+document.getElementById("Collect").style = "display:none";
+document.getElementById("Analyze").style = "display:none";
+document.getElementById("1").style = "color:#1CBBC7;border-bottom: 6px solid;";
+document.getElementById("2").style = "color:black";
+document.getElementById("3").style = "color:black";
+document.getElementById("4").style = "color:black";
+}
+window.addEventListener('load', function () {
+document.getElementById("Create").style = "display:block;";
+document.getElementById("Distribute").style = "display:none";
+document.getElementById("Collect").style = "display:none";
+document.getElementById("Analyze").style = "display:none";
+document.getElementById("1").style = "color:#1CBBC7;border-bottom: 6px solid;";
+});
+
+function Distribute() {
+document.getElementById("Create").style = "display:none";
+document.getElementById("Distribute").style = "display:block;";
+document.getElementById("Collect").style = "display:none";
+document.getElementById("Analyze").style = "display:none";
+document.getElementById("2").style = "color:#1CBBC7;border-bottom: 6px solid;";
+document.getElementById("1").style = "color:black";
+document.getElementById("3").style = "color:black";
+document.getElementById("4").style = "color:black";
+}
+function Collect() {
+document.getElementById("Create").style = "display:none";
+document.getElementById("Distribute").style = "display:none";
+document.getElementById("Collect").style = "display:block";
+document.getElementById("Analyze").style = "display:none";
+document.getElementById("3").style = "color:#1CBBC7;border-bottom: 6px solid;";
+document.getElementById("2").style = "color:black";
+document.getElementById("1").style = "color:black";
+document.getElementById("4").style = "color:black";
+}
+function Analyze() {
+document.getElementById("Create").style = "display:none";
+document.getElementById("Distribute").style ="display:none";
+document.getElementById("Collect").style = "display:none";
+document.getElementById("Analyze").style = "display:block;";
+document.getElementById("4").style = "color:#1CBBC7;border-bottom: 6px solid;";
+document.getElementById("2").style = "color:black";
+document.getElementById("1").style = "color:black";
+document.getElementById("3").style = "color:black";
+
+}
+	</script>
+	<style type="text/css">
+		.page3 {
+display: flex;
+flex-direction: rowx;
+column-gap: 20px;
+justify-content: space-around;
+padding-left: 10%;
+padding-right: 10%;
+}
+
+.p11,
+.p12,
+.p13,
+.p14 {
+font-size: 30px;
+background-color: transparent;
+border: 40px 40px solid black;
+padding: 2rem;
+border-top: none;
+border-left: none;
+border-right: none;
+border-bottom: none;
+
+
+
+}
+
+/*.p1:hover {
+color: #1CBBC7;
+
+}
+
+.p1:link {
+text-decoration: none;
+}
+
+.p1:visited {
+text-decoration: none;
+}
+
+.p1:hover {
+text-decoration: underline;
+}
+
+.p1:active {
+text-decoration: underline;
+}
+*/
+.containerpage3 {
+font-size: 40px;
+padding-top: -20%;
+margin-top: -180px;
+height: 50%;
+width: 100%;
+}
+
+.pageslide {
+background-color: #EEFEFF;
+height: 0rem;
+padding-top: -100px;
+column-gap: 200px;
+/*height: 50%;
+width: 80%;*/
+}
+
+.left1 {
+/*background-color: #EEFEFF;*/
+float: left;
+width: 32%;
+padding-top: 7%;
+padding-left: 10%;
+height: 10%;
+
+}
+
+.left1 h1 {
+font-size: 50px;
+font-weight: lighter;
+}
+
+.left1 p {
+font-size: 20px;
+font-weight: lighter;
+color: #878787;
+}
+
+
+.right1 {
+/*background-color: #EEFEFF;*/
+float: right;
+width: 45%;
+padding-top: 50px;
+padding-right: 100px;
+padding-left: 0px;
+}
+
+.right1 img{
+	padding-left: 40px;
+	padding-top: 80px;
+
+}
+
+#ps {
+background-color: #EEFEFF;
+padding: 10%;
+}
+
+
+
+	</style>
+</head>
+<body>
+		<div class="menu">
+		<div class="menu1">
+		<div class="menu11">Features</div>
+		<div class="menu11">Pricing</div>
+		<div class="menu11">Testimonial</div>
+		<div class="menu11">Resources</div></div>
+		<div class="menuitem"><img src="img1.jpeg" height="40px"width="150px"></div>
+		<div class="menu11">Company</div>
+		<div class="menu11">Contact</div>
+		<div class="menuitem">
+			<div class="login">Login</div></div>
+		</div>
+
+
+		<div style="height: 28rem;background-color: aliceblue; padding-top: 1rem; width: 100%;">
+		<h1 align="center" class="title">A powerful online engagement tool <br>that’s intuitive and simple to use.</h1>
+		<p align="center" class="p1">With stellar one-click reports and unmatched support, see how </br>Circle will make a difference in your business.</p><center>
+		<h3 class="getstartedfree">Get started free <span style="padding-left: 10px;font-weight: bold;">  ></span> </h3></center>
+		<center>
+		<img  class="img1" src="img2.jpeg">
+		</center>
+		</div>
+
+		<div class="body3"><center>
+		<p class="p2">OUR CUSTOMERS</p></center>
+		<p class="p3" align="center">Trusted by 
+			<span style="font-size: 35px;font-style: bold;">100,000+ customers</span> in 90+ countries</p>
+		</div>
+		<center>
+		<div class="customercompany">
+		<img class="cusimg" src="capgemini.png">
+		<img class="cusimg" src="yamaha.png">
+		<img class="cusimg" src="Biocon.png">
+		<img class="cusimg" src="dell.png">
+		<img class="cusimg" src="ck.png">
+		<img class="cusimg" src="shell.png">
+		</div>
+		<div class="aftercus">
+		<p> signed <span style="color: black;"> up last month</span> </p>
+		<p>GDPR CCPA -<span style="color: black;">  & </span>-ready </p>
+		<p>Leader@G2 <span style="color: black;"> Summer</span></p></div>
+		</center>	
+
+
+		<div class="booody">
+		<div class="body4">
+		<div class="body4a">
+			<p align="center" class="body4a1">OUR PROMISE</p>
+			<p class="p4">Tool built for people</p>
+			<p class="p1">Whether you want to edit your Google Docs,
+			 <br>
+			resolve Jira issues, or collaborate over Zoom.</p>
+			<p class="p1">Circle has 100+ integrations with tools you
+			 <br>
+  			already use and love</p>
+  			<h3 class="getstartedfree">Get started free </h3>
+		  </div></div>
+<div class="body5">
+	<img class="img3" src="img3.jpeg">
+</div>
+</div>
+
+
+
+<div style="padding-top:3rem;height: 60rem">
+<div style="padding-top: 1rem;">
+	<center>
+	<p class="award">AWARDS</p>
+	<p style="font-weight: 20px;font-weight: bold;font-size: 20px;">An <span style="font-size: 25px;">award winning </span>platform,<span style="font-size: 25px;"> loved by customers.</span></p>
+	</center>
+</div>
+
+
+
+
+<div class="body7">
+		<div class="body7item" style="background-color: #e6b375;">
+			<img  class="body7img" src="img6.png"><h4 style="font-weight: bold;">Market leader across <br>
+18 categories</h4>
+		</div>
+		<div class="body7item"style="background-color: #FFF8F9">
+			<img  class="body7img" src="img8.jpeg"><h4 style="font-weight: bold;" >Most loved SaaS tool <br>
+            in 2021</h4>
+
+		</div>
+		<div class="body7item" style="background-color: #E0FFFF">
+			<img  class="body7img" src="img11.jpeg"><h4 style="font-weight: bold;">Category leader in <br>
+2022</h4>
+		</div>
+		<div class="body7item" style="background-color: #ddeefa">
+			<img  class="body7img" src="img12.jpeg"><h4 h4 style="font-weight: bold;">Most recommended <br>
+tool in 2021</h4>
+		</div>
+		<div class="body7item" style="background-color: lightyellow;">
+			<img  class="body7img" src="img13.jpeg"><h4 style="font-weight: bold;">Champion in survey <br>
+tool 2022</h4>
+		</div>
+		<div class="body7item"style="background-color: #e6b375;">
+			<img  class="body7img" src="img14.jpeg"><h4 style="font-weight: bold;">Top performer spring <br>
+2021</h4>
+		</div>
+		
+	</div>
+</div>
+
+
+
+
+
+
+<div class="page3">
+<input type="button" class="p11" id="1" value="Create" onclick="create()">
+<input type="button" class="p12" id="2" value="Distribute" onclick="Distribute()">
+<input type="button" class="p13" id="3" value="Collect" onclick="Collect()">
+<input type="button" class="p14" id="4" value="Analyze" onclick="Analyze()">
+</div>
+<div class="pageslide" id="ps" style="background-color: #ECFFFF;height: 250px;">
+<div class="containerpage3" id="Create">
+<div class="left1">
+<h1>Create</h1>
+<h2 style="font-size: 20px;">Advanced research software</h2>
+<p>Ask the right questions and get the answers you
+need with the most secure and collaborative
+survey platform on the market featuring
+powerful logic, sophisticated analytics, and
+built-in automation and integration.</p>
+<input class="getstartedfree" type="button" value="Get Started Free">
+</div>
+<div class="right1">
+<img src="img21.jpeg" height="300px" width="72%">
+</div>
+
+</div>
+<div class="containerpage3" id="Distribute">
+<div class="left1">
+<h1>Distribute</h1>
+<h2 style="font-size: 20px;">Advanced research software</h2>
+<p>Ask the right questions and get the answers you
+need with the most secure and collaborative
+survey platform on the market featuring
+powerful logic, sophisticated analytics, and
+built-in automation and integration.</p>
+<input class="getstartedfree" type="button" value="Get Started Free">
+</div>
+<div class="right1">
+<img src="vk.jpeg" height="300px" width="72%">
+</div>
+
+</div>
+<div class="containerpage3" id="Collect">
+<div class="left1">
+<h1>Collect</h1>
+<h2 style="font-size: 20px;">Advanced research software</h2>
+<p>Ask the right questions and get the answers you
+need with the most secure and collaborative
+survey platform on the market featuring
+powerful logic, sophisticated analytics, and
+built-in automation and integration.</p>
+<input class="getstartedfree" type="button" value="Get Started Free">
+</div>
+<div class="right1">
+<img src="img21.jpeg" height="300px" width="72%">
+</div>
+</div>
+<div class="containerpage3" id="Analyze">
+<div class="left1">
+<h1>Analyze</h1>
+<h2 style="font-size: 20px;">
+Advanced research software</h2>
+<p>Ask the right questions and get the answers you
+need with the most secure and collaborative
+survey platform on the market featuring
+powerful logic, sophisticated analytics, and
+built-in automation and integration.</p>
+<input class="getstartedfree" type="button" value="Get Started Free">
+</div>
+<div class="right1">
+<img src="bike.jpg" height="300px" width="72%">
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="body8">
+	<div class="body8a">
+		<div class="body8aa">
+			<p class="p4">
+				Looking for a solution<br>for your business?
+			</p>
+			<p class="p1">
+				Check out Sogolytics enterprise feedback and <br>
+				experience management platform.
+			</p>
+			<div style="display: flex;column-gap: 15px;">
+				<p class="getstartedfree"
+				style="width:90px">Learn more</p>
+				<p class="login">Schedule a consultation</p>
+			</div>
+
+
+		</div>
+
+	</div>
+	<div class="body8b">
+		<img class="img3" src="img15.jpeg">
+	</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="body9">
+	<div><center><p class="award">RESOURCES</p>
+		<p style="font-size:25px"><strong>Stay</strong> in the <strong>Know</strong></p>
+		</center>
+	</div>
+	<div class="body9a">
+			<div class="body9aa">
+				<p style="margin: 10px;">
+					<img src="img4.jpeg" width="100%">
+				Kongu Engineering College is an autonomous engineering college located at Perundurai, Erode district in the state of Tamil Nadu in India.
+				<span id="dot">...</span> 
+				<span id ="readmore" style="display:none;">It is affiliated to Anna University and accredited 'A++' Grade by National Assessment and Accreditation Counci</span></p>
+
+				<button  class="getstartedfree"
+				style="width:150px;height: 40px;margin-left: 20px;" onclick="myFunction()" id="btn">Read more</button>
+			</div>
+			<div class="body9aa">
+				<p style="margin: 10px;">
+					<img src="img4.jpeg"width="100%">
+				Kongu Engineering College is an autonomous engineering college located at Perundurai, Erode district in the state of Tamil Nadu in India.
+				<span id="dot">...</span> 
+				<span id ="readmore" style="display:none;">It is affiliated to Anna University and accredited 'A++' Grade by National Assessment and Accreditation Counci</span></p>
+
+				<button  class="getstartedfree"
+				style="width:150px;height: 40px;margin-left: 20px;" onclick="myFunction()" id="btn">Read more</button>
+			</div>
+			<div class="body9aa">
+				<p style="margin: 10px;">
+					<img src="img4.jpeg"width="100%">
+				Kongu Engineering College is an autonomous engineering college located at Perundurai, Erode district in the state of Tamil Nadu in India.
+				<span id="dot">...</span> 
+				<span id ="readmore" style="display:none;">It is affiliated to Anna University and accredited 'A++' Grade by National Assessment and Accreditation Counci</span></p>
+
+				<button  class="getstartedfree"
+				style="width:150px;height: 40px;margin-left: 20px;" onclick="myFunction()" id="btn">Read more</button>
+			</div>
+	</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="img4.jpeg"class="map">
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-4">
+            <h4 class="footer-heading">Products</h4>
+            <ul class="footer-links">
+              <li><a href="#">Delta</a></li>
+              <li><a href="#">Sigma</a></li>
+              <li><a href="#">Zeta</a></li>
+              <li><a href="#">Alpha</a></li>
+              <li><a href="#">Acumen</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="footer-heading">Resources</h4>
+            <ul class="footer-links">
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Training Videos</a></li>
+              <li><a href="#">Webinars</a></li>
+              <li><a href="#">Request a Demo</a></li>
+              <li><a href="#">Create Surveys</a></li>
+              <li><a href="#">Quiz Maker</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="footer-heading">Company</h4>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12" style="width: 100%">
+        <div class="footer-bottom">
+        	<div class="copy-right">
+            <p>©2022 Circle. All rights reserved.</p>
+          </div>
+          <div class="social-icons">
+            <a href="#"><img src="linked.png" alt="LinkedIn"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+          </div>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Data & Security</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Data & Security</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
