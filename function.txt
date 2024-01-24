@@ -1,0 +1,25 @@
+function greeting(name,callback)
+{
+setTimeout(function(){
+console.log("hello"+name+" "):
+callback();
+},2000};
+}
+function sayBye(){
+console.log("goodbooy");
+}
+
+function isAuthorized(){
+return Math.random<0.5;
+}
+function check(){
+return new Promise(function(resolve,reject){
+setTimeout(function(){
+if(isAuthorized()){
+resolve("Authorized");
+} 
+else {
+reject("Unauthorized");
+}},1000);
+});
+}check().then(function(message){console.log(message);}).catch(function(error){console.error(error);});
